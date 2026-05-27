@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+body {
+  background: #fff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.btn-red {
+  background: #E60012;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 0 #9A0009;
+}
+.btn-red:hover {
+  background: #FF1A2B;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 #9A0009;
+}
+.btn-red:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 #9A0009;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #E60012;
+  border: 2.5px solid #E60012;
+  font-weight: 800;
+  border-radius: 9999px;
+  transition: all 0.25s;
+}
+.btn-outline:hover {
+  background: #E60012;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.badge {
+  background: #FFF0F1;
+  color: #E60012;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}

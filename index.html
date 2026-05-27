@@ -5,9 +5,160 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwindtemplate</title>
+
+
   </head>
   <body>
-    <div class="bg-pink-500">oi galera :D</div>
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+
+          <!-- Logo Nintendo -->
+          <a href="#">
+            <img src="src/assets/nintendo.png" alt="Nintendo" class="h-12 w-auto">
+          </a>
+
+          <!-- Links desktop -->
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#console" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Console</a>
+            <a href="#features" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Recursos</a>
+            <a href="#jogos" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Jogos</a>
+          </div>
+
+          <button class="btn-red px-5 py-2 text-sm">Comprar agora</button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- HERO -->
+    <section class="relative min-h-screen pt-16 overflow-hidden flex items-center" id="console">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <!-- TEXTO -->
+          <div>
+            <p class="badge inline-flex mb-5">✦ NOVO · Disponível agora</p>
+            <h1 class="leading-tight text-gray-900 mb-6 text-[clamp(2.8rem,7vw,5.5rem)]">
+              Nintendo <br>
+              <span class="text-[#E60012]">Switch 2</span>
+            </h1>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8 max-w-md" >
+              Uma nova era para jogar em casa, em qualquer lugar e com todo mundo. Gráficos deslumbrantes, Joy‑Con magnéticos e multijogador local sem esforço. 
+            </p>
+            <div class="flex flex-wrap gap-4 mb-10">
+              <button class="btn-red px-8 py-3 text-base"> Comprar — R$ 3.999 </button>
+              <button class="btn-outline px-8 py-3 text-base">Saiba mais</button>
+            </div>
+          </div>
+          <!-- IMAGEM -->
+           <img src="src/assets/switch.png" alt="imagem switch 2">
+        </div>
+      </div>
+
+      <!-- Wave vermelha -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%; height:120px;">
+          <path fill="#E60012" d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="relative bg-[#E60012] pt-20 pb-36 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
+          <div>
+            <h3 class="font-display font-900 text-5xl mb-1">4K</h3>
+            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Resolução TV</p>
+          </div>
+          <div>
+            <h3 class="font-display font-900 text-5xl mb-1">9h</h3>
+            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Bateria</p>
+          </div>
+          <div>
+            <h3 class="font-display font-900 text-5xl mb-1">8</h3>
+            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Jogadores local</p>
+          </div>
+          <div>
+            <h3 class="font-display font-900 text-5xl mb-1">256GB</h3>
+            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Armazenamento</p>
+          </div>
+        </div>
+      </div>
+      <!-- Wave de saída (branca) -->
+      <div class="wave-divider absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%; height:80px;">
+          <path fill="#ffffff" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+     <section class="relative min-h-screen pt-16 overflow-hidden flex items-center bg-blue-100" id="features">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+
+        <div class="text-center mb-16">
+          <div class="badge inline-flex mb-4">03 · Recursos</div>
+          <h2 class="text-gray-900 mb-4" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+            Tudo novo,<br/><span class="text-red-600">tudo melhor</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">lor Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-7 flex gap-5">
+            <div class="bg-gray-400 rounded-full w-10 h-10 flex items-center justify-center shrink-0">🧲</div>
+            <div>
+              <h3 class="text-gray-900 text-lg mb-2">Joy‑Con Magnéticos</h3>
+              <p class="text-gray-500 text-sm ">Encaixe e remoção com um clique magnético suave. Sem travar, sem forçar — conexão instantânea.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+     </section>
   </body>
   <script type="module" src="./src/main.js"></script>
+
 </html>
