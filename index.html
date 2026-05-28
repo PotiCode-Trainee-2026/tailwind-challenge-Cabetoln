@@ -21,9 +21,9 @@
 
           <!-- Links desktop -->
           <div class="hidden md:flex items-center gap-8">
-            <a href="#console" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Console</a>
-            <a href="#features" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Recursos</a>
-            <a href="#jogos" class="text-gray-600 hover:text-nintendo font-body font-600 text-sm transition-colors">Jogos</a>
+            <a href="#console" class="text-gray-600 hover: cursor-pointer">Console</a>
+            <a href="#features" class="text-gray-600 hover:cursor-pointer">Recursos</a>
+            <a href="#jogos" class="text-gray-600 hover: cursor-pointer">Jogos</a>
           </div>
 
           <button class="btn-red px-5 py-2 text-sm">Comprar agora</button>
@@ -68,35 +68,36 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
           <div>
-            <h3 class="font-display font-900 text-5xl mb-1">4K</h3>
-            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Resolução TV</p>
+            <h3 class="text-5xl mb-1">4K</h3>
+            <p class="text-red-100 text-sm uppercase tracking-widest">Resolução TV</p>
           </div>
           <div>
-            <h3 class="font-display font-900 text-5xl mb-1">9h</h3>
-            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Bateria</p>
+            <h3 class="text-5xl mb-1">9h</h3>
+            <p class="text-red-100 text-sm uppercase tracking-widest">Bateria</p>
           </div>
           <div>
-            <h3 class="font-display font-900 text-5xl mb-1">8</h3>
-            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Jogadores local</p>
+            <h3 class="text-5xl mb-1">8</h3>
+            <p class="text-red-100 text-sm uppercase tracking-widest">Jogadores local</p>
           </div>
           <div>
-            <h3 class="font-display font-900 text-5xl mb-1">256GB</h3>
-            <p class="font-body text-red-100 text-sm font-600 uppercase tracking-widest">Armazenamento</p>
+            <h3 class="text-5xl mb-1">256GB</h3>
+            <p class="text-red-100 text-sm uppercase tracking-widest">Armazenamento</p>
           </div>
         </div>
       </div>
-      <!-- Wave de saída (branca) -->
+      <!-- Wave de saída (azul bem claro) -->
       <div class="wave-divider absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%; height:80px;">
-          <path fill="#ffffff" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/>
+          <path fill="#eff6ff" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/>
         </svg>
       </div>
     </section>
 
     <!-- RECURSOS -->
-     <section class="relative min-h-screen pt-16 overflow-hidden flex items-center bg-blue-100" id="features">
+     <section class="relative min-h-screen pt-16 overflow-hidden flex items-center bg-blue-50" id="features">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
 
+        <!-- TEXTO -->
         <div class="text-center mb-16">
           <div class="badge inline-flex mb-4">02 · Recursos</div>
           <h2 class="text-gray-900 mb-4" style="font-size: clamp(2rem, 5vw, 3.5rem);">
@@ -104,6 +105,7 @@
           </h2>
         </div>
 
+        <!-- BLOCOS -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
 
           <div class="bg-white rounded-3xl p-7 flex gap-5">
@@ -158,6 +160,69 @@
 
       </div>
      </section>
+
+     <!-- JOGOS -->
+      <section class="relative min-h-screen pt-16 overflow-hidden flex items-center bg-gray-100" id="jogos">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+
+          <!-- TEXTO -->
+          <div class="text-center mb-16">
+            <div class="badge inline-flex mb-4">03 · Jogos</div>
+            <h2 class="text-gray-900 mb-4" style="font-size: clamp(2rem, 5vw, 3.5rem);">
+              Universos para<br/><span class="text-red-600">explorar</span>
+            </h2>
+          </div>
+
+          <!-- CARDS JOGOS -->
+           <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+
+            <!-- JOGO1 -->
+            <div class="overflow-hidden cursor-pointer bg-white rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_48px_rgba(230,0,18,0.15)]">
+              <img src="src/assets/kart.png" alt="Mario Kart World" class="border-b-2 border-red-600">
+              <div class="p-4">
+                <div class="badge text-xs mb-2 !pl-0 text-center">Lançamento</div>
+                  <h4 class="text-gray-900 text-sm">Mario Kart World</h4>
+                  <p class="text-gray-400 text-xs mt-1">Corrida · 1-8 jogadores</p>
+                </div>
+            </div>
+
+            <!-- JOGO2 -->
+            <div class="overflow-hidden cursor-pointer bg-white rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_48px_rgba(230,0,18,0.15)]">
+              <img src="src/assets/zelda.png" alt="The Legend Of Zelda" class="border-b-2 border-red-600">
+              <div class="p-4">
+                <div class="badge text-xs mb-2 !pl-0 text-center">Exclusivo</div>
+                  <h4 class="text-gray-900 text-sm">The Legend of Zelda</h4>
+                  <p class="text-gray-400 text-xs mt-1">Aventura · 1 jogador</p>
+                </div>
+            </div>
+
+            <!-- JOGO3 -->
+            <div class="overflow-hidden cursor-pointer bg-white rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_48px_rgba(230,0,18,0.15)]">
+              <img src="src/assets/odissey.png" alt="Super mario odissey" class="border-b-2 border-red-600">
+              <div class="p-4">
+                <div class="badge text-xs mb-2 !pl-0 text-center">Exclusivo</div>
+                  <h4 class="text-gray-900 text-sm">Super Mario Odyssey 2</h4>
+                  <p class="text-gray-400 text-xs mt-1">Plataforma · 1-2 jogadores</p>
+                </div>
+            </div>
+
+            <!-- JOGO4 -->
+            <div class="overflow-hidden cursor-pointer bg-white rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_48px_rgba(230,0,18,0.15)]">
+              <img src="src/assets/smash.png" alt="Super Smash Bros" class="border-b-2 border-red-600">
+              <div class="p-4">
+                <div class="badge text-xs mb-2 !pl-0 text-center">Exclusivo</div>
+                  <h4 class="text-gray-900 text-sm">Super Smash Bros</h4>
+                  <p class="text-gray-400 text-xs mt-1">Luta · 1-8 jogadores</p>
+                </div>
+            </div>
+
+           </div>
+
+           <div class="text-center mb-16">
+            <button class="btn-outline px-8 py-3">Ver todos os jogos</button>
+           </div>
+        </div>
+      </section>
   </body>
   <script type="module" src="./src/main.js"></script>
 
